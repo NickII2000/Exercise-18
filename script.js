@@ -79,3 +79,81 @@ function showMyDB(hidden) {
 }
 
 showMyDB(personalMovieDB.privat);
+
+// const obj = new Object();
+const obj = {
+    name: 'Nick',
+};
+
+delete obj.name;
+console.log(obj.name);
+
+// Closure
+function fn1() {
+    let counter = 0;
+
+    function fn2() {
+        return ++counter;
+    }
+    return fn2;
+}
+
+const counterFn = fn1();
+console.log(counterFn());
+console.log(counterFn());
+console.log(counterFn());
+
+// Closure - 2
+// «immediately-invoked function expressions» (аббревиатура IIFE), что означает функцию, запускаемую сразу после объявления
+const counterFn2 = (function () {
+    let counter = 0;
+    return function () {
+        return ++counter;
+    };
+})();
+
+console.log(counterFn2());
+console.log(counterFn2());
+console.log(counterFn2());
+
+// 
+
+function sum(a) {
+
+    return function (b) {
+        return a + b; // берёт "a" из внешнего лексического окружения
+    };
+
+}
+
+// 
+
+console.log(sum(1)(2)); // 3
+console.log(sum(5)(-1)); // 4
+
+// 
+
+let arr = [3, 5, 1];
+console.log(...arr);
+console.log(Math.max(...arr)); // 5 (оператор "раскрывает" массив в список аргументов)
+
+
+//
+const counterFn2 = (function () {
+    let counter = 0;
+    return () => ++counter;
+})();
+
+console.log(counterFn2());
+console.log(counterFn2());
+console.log(counterFn2());
+
+// Closure with arrow functions
+const counterMy = (() => {
+    let counter = 0;
+    return () => ++counter;
+})();
+
+console.log(counterMy());
+console.log(counterMy());
+console.log(counterMy());
