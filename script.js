@@ -128,7 +128,7 @@ function sum(a) {
 
 // 
 
-console.log(sum(1)(2)); // 3
+console.log(sum(1)(3)); // 4
 console.log(sum(5)(-1)); // 4
 
 // 
