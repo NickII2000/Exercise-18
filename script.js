@@ -129,7 +129,7 @@ function sum(a) {
 // 
 
 console.log(sum(1)(3)); // 4
-console.log(sum(80)(-1)); // 79
+console.log(sum(800)(-1)); // 799
 
 // 
 
