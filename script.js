@@ -163,7 +163,7 @@ console.log(counterMy());
 // Место для первой задачи
 
 function calculateVolumeAndArea(cubeEdge) {
-    if (!isNaN(cubeEdge) || cubeEdge > 0) {
+    if (typeof (cubeEdge) === 'number' && cubeEdge > 0 && cubeEdge % 1 === 0) {
         return `Объем куба: ${cubeEdge * cubeEdge * cubeEdge}, площадь всей поверхности: ${cubeEdge * cubeEdge * 6}`;
     } else {
         return 'При вычислении произошла ошибка';
@@ -171,8 +171,27 @@ function calculateVolumeAndArea(cubeEdge) {
 }
 
 console.log(calculateVolumeAndArea(5));
+console.log(calculateVolumeAndArea(15));
+console.log(calculateVolumeAndArea(15.5));
+console.log(calculateVolumeAndArea('15'));
+console.log(calculateVolumeAndArea(-15));
+console.log(typeof ('-15') === 'number');
 
 // Место для второй задачи
-function getCoupeNumber() {
-
+function getCoupeNumber(place) {
+    if (typeof (place) !== 'number' || place < 0 || place % 1 !== 0) {
+        return 'Ошибка. Проверьте правильность введенного номера места';
+    } else if (place === 0 || place > 36) {
+        return 'Таких мест в вагоне не существует';
+    } else {
+        return `${Math.ceil(place / 4 )}`;
+    }
 }
+
+console.log(getCoupeNumber(33));
+console.log(getCoupeNumber(7));
+console.log(getCoupeNumber(300));
+console.log(getCoupeNumber(0));
+console.log(getCoupeNumber(7.7));
+console.log(getCoupeNumber(-10));
+console.log(getCoupeNumber('Hello'));
