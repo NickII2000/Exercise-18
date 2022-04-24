@@ -184,7 +184,7 @@ function getCoupeNumber(place) {
     } else if (place === 0 || place > 36) {
         return 'Таких мест в вагоне не существует';
     } else {
-        return `${Math.ceil(place / 4 )}`;
+        return Math.ceil(place / 4);
     }
 }
 
