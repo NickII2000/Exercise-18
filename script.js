@@ -245,3 +245,29 @@ function findMaxNumber(a, b, c, d) {
 
 console.log(findMaxNumber(1, 5, 6.6, 10.5));
 console.log(findMaxNumber(1, 5, '6', '10'));
+
+
+// // Упражнение 29 (задания)
+// в)
+function fib(num) {
+    if (typeof (num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return "";
+    }
+    let str = '0',
+        num1 = 0,
+        num2 = 1,
+        temp1;
+    for (let i = 2; i <= num; i++) {
+        str = str + ' ' + num2;
+        temp1 = num1;
+        num1 = num2;
+        num2 += temp1;
+    }
+    return str;
+}
+
+console.log(fib(4));
+console.log(fib(7));
+console.log(fib('7'));
+console.log(fib(0));
+console.log(fib(22));
