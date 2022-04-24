@@ -258,7 +258,7 @@ function fib(num) {
         num2 = 1,
         temp1;
     for (let i = 2; i <= num; i++) {
-        str = str + ' ' + num2;
+        str += ' ' + num2;
         temp1 = num1;
         num1 = num2;
         num2 += temp1;
