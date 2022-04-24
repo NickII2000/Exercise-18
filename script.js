@@ -157,3 +157,22 @@ const counterMy = (() => {
 console.log(counterMy());
 console.log(counterMy());
 console.log(counterMy());
+
+// Упражнение 29 (задания)
+// а)
+// Место для первой задачи
+
+function calculateVolumeAndArea(cubeEdge) {
+    if (!isNaN(cubeEdge) || cubeEdge > 0) {
+        return `Объем куба: ${cubeEdge * cubeEdge * cubeEdge}, площадь всей поверхности: ${cubeEdge * cubeEdge * 6}`;
+    } else {
+        return 'При вычислении произошла ошибка';
+    }
+}
+
+console.log(calculateVolumeAndArea(5));
+
+// Место для второй задачи
+function getCoupeNumber() {
+
+}
