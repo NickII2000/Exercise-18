@@ -214,11 +214,15 @@ function getTimeFromMinutes(minutesTotal) {
             hoursStr = 'часов';
             break;
         case 1:
+        case 21:
             hoursStr = 'час';
             break;
         case 2:
         case 3:
         case 4:
+        case 22:
+        case 23:
+        case 24:
             hoursStr = 'часа';
             break;
         default:
@@ -229,6 +233,7 @@ function getTimeFromMinutes(minutesTotal) {
 }
 
 console.log(getTimeFromMinutes(180));
+console.log(getTimeFromMinutes(1260));
 
 function findMaxNumber(a, b, c, d) {
     // Самое простое - это использовать Math.max :)
@@ -271,4 +276,4 @@ console.log(fib(7));
 console.log(fib('7'));
 console.log(fib(0));
 console.log(fib(''));
-console.log(fib(25));
+console.log(fib(30));
