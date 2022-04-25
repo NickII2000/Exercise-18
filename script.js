@@ -270,4 +270,4 @@ console.log(fib(4));
 console.log(fib(7));
 console.log(fib('7'));
 console.log(fib(0));
-console.log(fib(15));
+console.log(fib(25));
