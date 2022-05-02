@@ -159,6 +159,8 @@ console.log(counterMy());
 console.log(counterMy());
 console.log(counterMy());
 
+console.log(typeof NaN);
+
 // Упражнение 29 (задания)
 // а)
 // Место для первой задачи
