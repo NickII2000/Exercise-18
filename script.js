@@ -157,6 +157,7 @@ const counterMy = (() => {
 console.log(counterMy());
 console.log(counterMy());
 console.log(counterMy());
+console.log(counterMy());
 
 // Упражнение 29 (задания)
 // а)
