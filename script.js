@@ -162,6 +162,22 @@ console.log(counterMy());
 console.log(typeof NaN);
 console.log("a" > "b");
 
+function foo(a, b) {
+    const [first, second] = a;
+    const {
+        ru,
+        eng
+    } = b;
+
+    return `${first} ${eng}`;
+}
+
+const result = foo(['Hello', 'Привет'], {
+    ru: 'Мир',
+    eng: 'World',
+});
+
+console.log(result);
 
 // Упражнение 29 (задания)
 // а)
