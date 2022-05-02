@@ -160,6 +160,8 @@ console.log(counterMy());
 console.log(counterMy());
 
 console.log(typeof NaN);
+console.log("a" > "b");
+
 
 // Упражнение 29 (задания)
 // а)
