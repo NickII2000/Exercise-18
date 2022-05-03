@@ -102,6 +102,7 @@ const counterFn = fn1();
 console.log(counterFn());
 console.log(counterFn());
 console.log(counterFn());
+console.log(counterFn());
 
 // Closure - 2
 // «immediately-invoked function expressions» (аббревиатура IIFE), что означает функцию, запускаемую сразу после объявления
