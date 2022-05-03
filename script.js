@@ -307,9 +307,9 @@ console.log(fib(30));
 // Упражнение 41. Задачи с собеседований на понимание основ
 
 //Какое будет выведено значение: 5
-let x = 5;
-// alert(x++);
-console.log(x++);
+let x1 = 5;
+// alert(x1++);
+console.log(x1++);
 
 //Чему равно такое выражение: NaN
 // [] + false - null + true;
@@ -345,9 +345,9 @@ console.log(!!(a && b) === (a && b));
 console.log(null || 2 && 3 || 4);
 
 //Правда ли что a == b ? нет
-const a = [1, 2, 3];
-const b = [1, 2, 3];
-console.log(a === b);
+const a1 = [1, 2, 3];
+const b1 = [1, 2, 3];
+console.log(a1 === b1);
 
 //Что выведет этот код: infinity
 // alert(+"Infinity");
