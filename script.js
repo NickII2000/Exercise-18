@@ -351,7 +351,7 @@ console.log(null || 2 && 3 || 4);
 //Правда ли что a == b ? нет
 const a1 = [1, 2, 3];
 const b1 = [1, 2, 3];
-console.log(a1 === b1);
+console.log(a1 == b1);
 
 //Что выведет этот код: infinity
 // alert(+"Infinity");
