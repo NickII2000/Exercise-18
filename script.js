@@ -334,10 +334,14 @@ console.log(typeof "1" [0]);
 // 2 && 1 && null && 0 && undefined;
 console.log(2 && 1 && null && 0 && undefined);
 
-//Есть ли разница между выражениями? нет
+//Есть ли разница между выражениями? ДА
 // !!(a && b) и (a && b);
-let a = true,
-    b = false;
+// let a = true,
+//     b = false;
+let a = 1,
+    b = 2;
+console.log(!!(a && b));
+console.log((a && b));
 console.log(!!(a && b) === (a && b));
 
 //Что выведет этот код: 3
