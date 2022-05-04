@@ -149,7 +149,6 @@ const counterFn2 = (function () {
 console.log(counterFn2());
 console.log(counterFn2());
 console.log(counterFn2());
-console.log(counterFn2());
 
 // Closure with arrow functions
 const counterMy = (() => {
