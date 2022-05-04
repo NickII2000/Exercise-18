@@ -159,7 +159,6 @@ const counterMy = (() => {
 console.log(counterMy());
 console.log(counterMy());
 console.log(counterMy());
-console.log(counterMy());
 
 console.log(typeof NaN);
 console.log("a" > "b");
