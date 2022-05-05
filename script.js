@@ -427,10 +427,15 @@ function transferWaitors(data) {
     //     element = Object.assign({}, element);
     // });
 
-    copy.waitors[0] = {
+    // Нам просто нужно менять весь массив данных,
+    // а не лезть напрямую менять каждого из сотрудников
+    // Так как это верхний уровень объекта, то значение 
+    // будет меняться только у копии
+
+    copy.waitors = [{
         name: 'Mike',
         age: 32
-    };
+    }];
     return copy;
 }
 
