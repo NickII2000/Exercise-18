@@ -415,27 +415,30 @@ function isAverageLunchPriceTrue(fDish, sDish, average) {
 console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
 
 function transferWaitors(data) {
-    const dataStr = JSON.stringify(data);
-    const copy = JSON.parse(dataStr);
-    // const copy = Object.assign({}, data);
+    // const dataStr = JSON.stringify(data);
+    // const copy = JSON.parse(dataStr);
+    const copy = Object.assign({}, data);
 
-    // copy.menu.forEach(element => {
-    //     element = Object.assign({}, element);
-    // });
+    copy.menu = copy.menu.slice();
+    copy.waitors = copy.waitors.slice();
 
-    // copy.waitors.forEach(element => {
-    //     element = Object.assign({}, element);
-    // });
+    copy.menu.forEach(element => {
+        element = Object.assign({}, element);
+    });
+
+    copy.waitors.forEach(element => {
+        element = Object.assign({}, element);
+    });
 
     // Нам просто нужно менять весь массив данных,
     // а не лезть напрямую менять каждого из сотрудников
     // Так как это верхний уровень объекта, то значение 
     // будет меняться только у копии
 
-    copy.waitors = [{
+    copy.waitors[0] = {
         name: 'Mike',
         age: 32
-    }];
+    };
     return copy;
 }
 
