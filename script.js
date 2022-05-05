@@ -422,13 +422,13 @@ function transferWaitors(data) {
     copy.menu = copy.menu.slice();
     copy.waitors = copy.waitors.slice();
 
-    copy.menu.forEach(element => {
-        element = Object.assign({}, element);
-    });
+    // copy.menu.forEach(element => {
+    //     element = Object.assign({}, element);
+    // });
 
-    copy.waitors.forEach(element => {
-        element = Object.assign({}, element);
-    });
+    // copy.waitors.forEach(element => {
+    //     element = Object.assign({}, element);
+    // });
 
     // Нам просто нужно менять весь массив данных,
     // а не лезть напрямую менять каждого из сотрудников
