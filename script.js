@@ -446,3 +446,21 @@ transferWaitors(restorantData);
 
 console.log(transferWaitors(restorantData));
 console.log(restorantData);
+
+
+// --------------------------------------------------------------------------------- мои пробы
+
+let arr = [1, 2, 5];
+
+// начиная с индекса -1 (перед последним элементом)
+// удалить 0 элементов,
+// затем вставить числа 3 и 4
+
+arr.splice(-1, 0, 3, 4);
+console.log(arr); // 1,2,3,4,5
+
+arr.splice(-3, 2, 99, 100);
+console.log(arr); // 1,2,3,4,5
+
+arr.splice(-1, 1);
+console.log(arr); // 1,2,3,4,5
