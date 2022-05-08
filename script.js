@@ -479,3 +479,6 @@ console.log(arr.slice(-5, 5)); // (копирует с 0 до конца)
 console.log(arr.slice(-5, 0)); // (копирует с 0 0 элементов)
 console.log(arr.slice(-5, 5).reverse()); // (копирует с 0 до конца, затем реверс)
 console.log(arr.slice(-5, 3).reverse()); // (копирует с 0 по 2, затем реверс)
+
+arr.splice(-2, 2, 3, 4, 5);
+console.log(arr); // 1,2,3,3,4,5
